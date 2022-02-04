@@ -1,0 +1,12 @@
+{
+  "maytok.sounds.bzrpnickyjam": {
+    "category": "music",
+    "subtitle": "subtitles.maytok.sounds.bzrpnickyjam",
+    "sounds": [
+      {
+        "name": "maytok_mod:nicky_jam___bzrp_music_sessions_41-bh6t3ctuncc",
+        "stream": true
+      }
+    ]
+  }
+}

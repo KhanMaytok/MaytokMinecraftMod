@@ -24,7 +24,7 @@ public class MaytokDroneRenderer {
 				BipedRenderer customRender = new BipedRenderer(renderManager, new BipedModel(0), 0.5f) {
 					@Override
 					public ResourceLocation getEntityTexture(Entity entity) {
-						return new ResourceLocation("maytok_mod:textures/dronecase2.png");
+						return new ResourceLocation("maytok_mod:textures/kabir_valyesi.png");
 					}
 				};
 				customRender.addLayer(new BipedArmorLayer(customRender, new BipedModel(0.5f), new BipedModel(1)));
