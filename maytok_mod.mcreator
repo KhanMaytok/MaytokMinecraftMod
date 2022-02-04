@@ -1,0 +1,182 @@
+{
+  "mod_elements": [
+    {
+      "name": "MaytokDigger",
+      "type": "block",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "maytok_digger"
+    },
+    {
+      "name": "MaytokDiggerOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "maytok_digger_on_block_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PlaceDigFloor",
+      "type": "procedure",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "place_dig_floor",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DigMain",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dig_main",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ClearBarriers",
+      "type": "procedure",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "clear_barriers",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MaytokDiggerRecipe",
+      "type": "recipe",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "maytok_digger_recipe"
+    },
+    {
+      "name": "MaytokDrone",
+      "type": "livingentity",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "maytok_drone"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [
+    {
+      "name": "maytok.sounds.bzrpnickyjam",
+      "files": [
+        "nicky_jam___bzrp_music_sessions_41-bh6t3ctuncc"
+      ],
+      "category": "music",
+      "subtitle": "BZRP x Nicky Jam"
+    }
+  ],
+  "language_map": {
+    "en_us": {
+      "subtitles.maytok.sounds.bzrpnickyjam": "BZRP x Nicky Jam",
+      "item.maytok_mod.maytok_drone_spawn_egg": "Maytok Drone Spawn Egg",
+      "entity.maytok_mod.maytok_drone": "Maytok Drone",
+      "subtitles.maytok.sounds.pumpedupkicks": "",
+      "block.maytok_mod.maytok_digger": "Maytok Digger"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "maytok_mod",
+    "modName": "Maytok mod",
+    "version": "1.0.0",
+    "author": "sakya, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.16.5",
+    "modElementsPackage": "com.maytok.mcmod",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202100353117
+}

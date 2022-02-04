@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "maytok_mod:blocks/diego",
+    "up": "maytok_mod:blocks/diego",
+    "north": "maytok_mod:blocks/diego",
+    "east": "maytok_mod:blocks/diego",
+    "south": "maytok_mod:blocks/diego",
+    "west": "maytok_mod:blocks/diego",
+    "particle": "maytok_mod:blocks/diego"
+  }
+}
