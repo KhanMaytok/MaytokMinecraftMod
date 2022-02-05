@@ -2,12 +2,12 @@
   "_fv": 24,
   "_type": "block",
   "definition": {
-    "texture": "diego",
-    "textureTop": "diego",
-    "textureLeft": "diego",
-    "textureFront": "diego",
-    "textureRight": "diego",
-    "textureBack": "diego",
+    "texture": "geolyzer_side",
+    "textureTop": "blockdiggertexturetop",
+    "textureLeft": "geolyzer_side",
+    "textureFront": "geolyzer_side",
+    "textureRight": "geolyzer_side",
+    "textureBack": "geolyzer_side",
     "renderType": 10,
     "customModelName": "Normal",
     "rotationMode": 0,
@@ -54,7 +54,7 @@
     "material": {
       "value": "ROCK"
     },
-    "tickRate": 5,
+    "tickRate": 10,
     "tickRandomly": false,
     "isReplaceable": false,
     "canProvidePower": false,
@@ -99,7 +99,7 @@
     "breakHarvestLevel": 1,
     "spawnParticles": false,
     "particleToSpawn": {
-      "value": "EXPLOSION_NORMAL"
+      "value": "SMOKE_NORMAL"
     },
     "particleSpawningShape": "Spread",
     "particleSpawningRadious": 0.5,

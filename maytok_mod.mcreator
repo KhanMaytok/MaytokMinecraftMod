@@ -93,48 +93,12 @@
       }
     },
     {
-      "name": "ClearBarriers",
-      "type": "procedure",
-      "sortid": 7,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "clear_barriers",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
       "name": "MaytokDiggerRecipe",
       "type": "recipe",
       "sortid": 9,
       "compiles": true,
       "locked_code": false,
       "registry_name": "maytok_digger_recipe"
-    },
-    {
-      "name": "MaytokDrone",
-      "type": "livingentity",
-      "sortid": 11,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "maytok_drone"
     }
   ],
   "variable_elements": [],
@@ -151,8 +115,6 @@
   "language_map": {
     "en_us": {
       "subtitles.maytok.sounds.bzrpnickyjam": "BZRP x Nicky Jam",
-      "item.maytok_mod.maytok_drone_spawn_egg": "Maytok Drone Spawn Egg",
-      "entity.maytok_mod.maytok_drone": "Maytok Drone",
       "subtitles.maytok.sounds.pumpedupkicks": "",
       "block.maytok_mod.maytok_digger": "Maytok Digger"
     }
@@ -178,5 +140,5 @@
     "modElementsPackage": "com.maytok.mcmod",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202100353117
+  "mcreatorVersion": 202100354000
 }

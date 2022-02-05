@@ -1,19 +1,14 @@
 package com.maytok.mcmod.procedures;
 
-import net.minecraftforge.fml.server.ServerLifecycleHooks;
-
 import net.minecraft.world.server.ServerWorld;
 import net.minecraft.world.World;
 import net.minecraft.world.IWorld;
 import net.minecraft.util.text.StringTextComponent;
-import net.minecraft.util.text.ChatType;
 import net.minecraft.util.math.vector.Vector3d;
 import net.minecraft.util.math.vector.Vector2f;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.Util;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.tags.BlockTags;
-import net.minecraft.server.MinecraftServer;
 import net.minecraft.command.ICommandSource;
 import net.minecraft.command.CommandSource;
 import net.minecraft.block.Blocks;
@@ -69,11 +64,6 @@ public class MaytokDiggerOnBlockRightClickedProcedure {
 			} else {
 				encontreRompible = 1;
 			}
-		}
-		if (!world.isRemote()) {
-			MinecraftServer mcserv = ServerLifecycleHooks.getCurrentServer();
-			if (mcserv != null)
-				mcserv.getPlayerList().func_232641_a_(new StringTextComponent("Encontr\u00E9 una capa a romper"), ChatType.SYSTEM, Util.DUMMY_UUID);
 		}
 		if (!BlockTags.getCollection().getTagByID(new ResourceLocation("minecraft:wither_immune"))
 				.contains((world.getBlockState(new BlockPos((int) (x + 0), (int) (y - level), (int) (z + 1)))).getBlock())) {
@@ -161,7 +151,7 @@ public class MaytokDiggerOnBlockRightClickedProcedure {
 				((World) world).getServer().getCommandManager().handleCommand(
 						new CommandSource(ICommandSource.DUMMY, new Vector3d(x, y, z), Vector2f.ZERO, (ServerWorld) world, 4, "",
 								new StringTextComponent(""), ((World) world).getServer(), null).withFeedbackDisabled(),
-						"fill ~-1 ~-2 ~-1 ~1 ~-40 ~1 air");
+						"fill ~-1 ~-2 ~-1 ~1 ~-20 ~1 air");
 			}
 
 			((World) world).getServer().getCommandManager().handleCommand(
