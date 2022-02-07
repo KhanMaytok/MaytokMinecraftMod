@@ -99,6 +99,82 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "maytok_digger_recipe"
+    },
+    {
+      "name": "MaytokCleaner",
+      "type": "block",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "maytok_cleaner"
+    },
+    {
+      "name": "MaytokCleanerGui",
+      "type": "gui",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "maytok_cleaner_gui"
+    },
+    {
+      "name": "Sdsdsd",
+      "type": "procedure",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sdsdsd",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MaytokCleanerUpdateTock",
+      "type": "procedure",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "maytok_cleaner_update_tock",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -116,7 +192,8 @@
     "en_us": {
       "subtitles.maytok.sounds.bzrpnickyjam": "BZRP x Nicky Jam",
       "subtitles.maytok.sounds.pumpedupkicks": "",
-      "block.maytok_mod.maytok_digger": "Maytok Digger"
+      "block.maytok_mod.maytok_digger": "Maytok Digger",
+      "block.maytok_mod.maytok_cleaner": "Maytok Cleaner"
     }
   },
   "foldersRoot": {
