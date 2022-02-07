@@ -65,99 +65,35 @@ public class MaytokDiggerOnBlockRightClickedProcedure {
 				encontreRompible = 1;
 			}
 		}
-		if (!BlockTags.getCollection().getTagByID(new ResourceLocation("minecraft:wither_immune"))
-				.contains((world.getBlockState(new BlockPos((int) (x + 0), (int) (y - level), (int) (z + 1)))).getBlock())) {
-			if (world instanceof World) {
-				Block.spawnDrops(world.getBlockState(new BlockPos((int) (x + 0), (int) (y - level), (int) (z + 1))), (World) world,
-						new BlockPos((int) x, (int) (y + 1), (int) z));
-				world.destroyBlock(new BlockPos((int) (x + 0), (int) (y - level), (int) (z + 1)), false);
+		sz = (-3);
+		for (int index1 = 0; index1 < (int) (6); index1++) {
+			sx = (-3);
+			for (int index2 = 0; index2 < (int) (6); index2++) {
+				if (!BlockTags.getCollection().getTagByID(new ResourceLocation("minecraft:wither_immune"))
+						.contains((world.getBlockState(new BlockPos((int) (x + sx), (int) (y - level), (int) (z + sz)))).getBlock())) {
+					if (world instanceof World) {
+						Block.spawnDrops(world.getBlockState(new BlockPos((int) (x + sx), (int) (y - level), (int) (z + sz))), (World) world,
+								new BlockPos((int) x, (int) (y + 1), (int) z));
+						world.destroyBlock(new BlockPos((int) (x + sx), (int) (y - level), (int) (z + sz)), false);
+					}
+					world.setBlockState(new BlockPos((int) (x + sx), (int) (y - level), (int) (z + sz)), Blocks.BARRIER.getDefaultState(), 3);
+				}
+				sx = (sx + 1);
 			}
-			world.setBlockState(new BlockPos((int) (x + 0), (int) (y - level), (int) (z + 1)), Blocks.BARRIER.getDefaultState(), 3);
-		}
-		if (!BlockTags.getCollection().getTagByID(new ResourceLocation("minecraft:wither_immune"))
-				.contains((world.getBlockState(new BlockPos((int) (x + 0), (int) (y - level), (int) (z + 0)))).getBlock())) {
-			if (world instanceof World) {
-				Block.spawnDrops(world.getBlockState(new BlockPos((int) (x + 0), (int) (y - level), (int) (z + 0))), (World) world,
-						new BlockPos((int) x, (int) (y + 1), (int) z));
-				world.destroyBlock(new BlockPos((int) (x + 0), (int) (y - level), (int) (z + 0)), false);
-			}
-			world.setBlockState(new BlockPos((int) (x + 0), (int) (y - level), (int) (z + 0)), Blocks.BARRIER.getDefaultState(), 3);
-		}
-		if (!BlockTags.getCollection().getTagByID(new ResourceLocation("minecraft:wither_immune"))
-				.contains((world.getBlockState(new BlockPos((int) (x + 1), (int) (y - level), (int) (z + 0)))).getBlock())) {
-			if (world instanceof World) {
-				Block.spawnDrops(world.getBlockState(new BlockPos((int) (x + 1), (int) (y - level), (int) (z + 0))), (World) world,
-						new BlockPos((int) x, (int) (y + 1), (int) z));
-				world.destroyBlock(new BlockPos((int) (x + 1), (int) (y - level), (int) (z + 0)), false);
-			}
-			world.setBlockState(new BlockPos((int) (x + 1), (int) (y - level), (int) (z + 0)), Blocks.BARRIER.getDefaultState(), 3);
-		}
-		if (!BlockTags.getCollection().getTagByID(new ResourceLocation("minecraft:wither_immune"))
-				.contains((world.getBlockState(new BlockPos((int) (x + 1), (int) (y - level), (int) (z + 1)))).getBlock())) {
-			if (world instanceof World) {
-				Block.spawnDrops(world.getBlockState(new BlockPos((int) (x + 1), (int) (y - level), (int) (z + 1))), (World) world,
-						new BlockPos((int) x, (int) (y + 1), (int) z));
-				world.destroyBlock(new BlockPos((int) (x + 1), (int) (y - level), (int) (z + 1)), false);
-			}
-			world.setBlockState(new BlockPos((int) (x + 1), (int) (y - level), (int) (z + 1)), Blocks.BARRIER.getDefaultState(), 3);
-		}
-		if (!BlockTags.getCollection().getTagByID(new ResourceLocation("minecraft:wither_immune"))
-				.contains((world.getBlockState(new BlockPos((int) (x + 0), (int) (y - level), (int) (z - 1)))).getBlock())) {
-			if (world instanceof World) {
-				Block.spawnDrops(world.getBlockState(new BlockPos((int) (x + 0), (int) (y - level), (int) (z - 1))), (World) world,
-						new BlockPos((int) x, (int) (y + 1), (int) z));
-				world.destroyBlock(new BlockPos((int) (x + 0), (int) (y - level), (int) (z - 1)), false);
-			}
-			world.setBlockState(new BlockPos((int) (x + 0), (int) (y - level), (int) (z - 1)), Blocks.BARRIER.getDefaultState(), 3);
-		}
-		if (!BlockTags.getCollection().getTagByID(new ResourceLocation("minecraft:wither_immune"))
-				.contains((world.getBlockState(new BlockPos((int) (x - 1), (int) (y - level), (int) (z - 0)))).getBlock())) {
-			if (world instanceof World) {
-				Block.spawnDrops(world.getBlockState(new BlockPos((int) (x - 1), (int) (y - level), (int) (z - 0))), (World) world,
-						new BlockPos((int) x, (int) (y + 1), (int) z));
-				world.destroyBlock(new BlockPos((int) (x - 1), (int) (y - level), (int) (z - 0)), false);
-			}
-			world.setBlockState(new BlockPos((int) (x - 1), (int) (y - level), (int) (z - 0)), Blocks.BARRIER.getDefaultState(), 3);
-		}
-		if (!BlockTags.getCollection().getTagByID(new ResourceLocation("minecraft:wither_immune"))
-				.contains((world.getBlockState(new BlockPos((int) (x - 1), (int) (y - level), (int) (z - 1)))).getBlock())) {
-			if (world instanceof World) {
-				Block.spawnDrops(world.getBlockState(new BlockPos((int) (x - 1), (int) (y - level), (int) (z - 1))), (World) world,
-						new BlockPos((int) x, (int) (y + 1), (int) z));
-				world.destroyBlock(new BlockPos((int) (x - 1), (int) (y - level), (int) (z - 1)), false);
-			}
-			world.setBlockState(new BlockPos((int) (x - 1), (int) (y - level), (int) (z - 1)), Blocks.BARRIER.getDefaultState(), 3);
-		}
-		if (!BlockTags.getCollection().getTagByID(new ResourceLocation("minecraft:wither_immune"))
-				.contains((world.getBlockState(new BlockPos((int) (x + 1), (int) (y - level), (int) (z - 1)))).getBlock())) {
-			if (world instanceof World) {
-				Block.spawnDrops(world.getBlockState(new BlockPos((int) (x + 1), (int) (y - level), (int) (z - 1))), (World) world,
-						new BlockPos((int) x, (int) (y + 1), (int) z));
-				world.destroyBlock(new BlockPos((int) (x + 1), (int) (y - level), (int) (z - 1)), false);
-			}
-			world.setBlockState(new BlockPos((int) (x + 1), (int) (y - level), (int) (z - 1)), Blocks.BARRIER.getDefaultState(), 3);
-		}
-		if (!BlockTags.getCollection().getTagByID(new ResourceLocation("minecraft:wither_immune"))
-				.contains((world.getBlockState(new BlockPos((int) (x - 1), (int) (y - level), (int) (z + 1)))).getBlock())) {
-			if (world instanceof World) {
-				Block.spawnDrops(world.getBlockState(new BlockPos((int) (x - 1), (int) (y - level), (int) (z + 1))), (World) world,
-						new BlockPos((int) x, (int) (y + 1), (int) z));
-				world.destroyBlock(new BlockPos((int) (x - 1), (int) (y - level), (int) (z + 1)), false);
-			}
-			world.setBlockState(new BlockPos((int) (x - 1), (int) (y - level), (int) (z + 1)), Blocks.BARRIER.getDefaultState(), 3);
+			sz = (sz + 1);
 		}
 		if ((world.getBlockState(new BlockPos((int) x, (int) (y - level), (int) z))).getBlock() == Blocks.BEDROCK) {
 			if (world instanceof ServerWorld) {
 				((World) world).getServer().getCommandManager().handleCommand(
 						new CommandSource(ICommandSource.DUMMY, new Vector3d(x, y, z), Vector2f.ZERO, (ServerWorld) world, 4, "",
 								new StringTextComponent(""), ((World) world).getServer(), null).withFeedbackDisabled(),
-						"fill ~-1 ~-2 ~-1 ~1 ~-20 ~1 air");
+						"fill ~-3 ~-2 ~-3 ~2 ~-2 ~2 air");
 			}
 
 			((World) world).getServer().getCommandManager().handleCommand(
 				new CommandSource(ICommandSource.DUMMY, new Vector3d(x, y, z), Vector2f.ZERO, (ServerWorld) world, 4, "",
 						new StringTextComponent(""), ((World) world).getServer(), null).withFeedbackDisabled(),
-				"fill ~-1 ~-2 ~-1 ~1 ~-" + level + " ~1 air");
+				"fill ~-3 ~-2 ~-3 ~2 ~-" + level + " ~2 air replace barrier");
 
 			if (world instanceof World) {
 				Block.spawnDrops(world.getBlockState(new BlockPos((int) x, (int) y, (int) z)), (World) world,

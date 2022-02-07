@@ -1,8 +1,13 @@
 package com.maytok.mcmod.procedures;
 
+import net.minecraft.world.server.ServerWorld;
+import net.minecraft.world.World;
 import net.minecraft.world.IWorld;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.block.Blocks;
+import net.minecraft.util.text.StringTextComponent;
+import net.minecraft.util.math.vector.Vector3d;
+import net.minecraft.util.math.vector.Vector2f;
+import net.minecraft.command.ICommandSource;
+import net.minecraft.command.CommandSource;
 
 import java.util.Map;
 
@@ -35,18 +40,11 @@ public class PlaceDigFloorProcedure {
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
-		double level = 0;
-		double hasPlacedFloor = 0;
-		double foundBedrock = 0;
-		double foundAir = 0;
-		world.setBlockState(new BlockPos((int) (x + 0), (int) (y - 1), (int) (z + 0)), Blocks.GLASS.getDefaultState(), 3);
-		world.setBlockState(new BlockPos((int) (x + 0), (int) (y - 1), (int) (z + 1)), Blocks.GLASS.getDefaultState(), 3);
-		world.setBlockState(new BlockPos((int) (x + 1), (int) (y - 1), (int) (z + 0)), Blocks.GLASS.getDefaultState(), 3);
-		world.setBlockState(new BlockPos((int) (x + 1), (int) (y - 1), (int) (z + 1)), Blocks.GLASS.getDefaultState(), 3);
-		world.setBlockState(new BlockPos((int) (x + 0), (int) (y - 1), (int) (z - 1)), Blocks.GLASS.getDefaultState(), 3);
-		world.setBlockState(new BlockPos((int) (x - 1), (int) (y - 1), (int) (z + 0)), Blocks.GLASS.getDefaultState(), 3);
-		world.setBlockState(new BlockPos((int) (x - 1), (int) (y - 1), (int) (z - 1)), Blocks.GLASS.getDefaultState(), 3);
-		world.setBlockState(new BlockPos((int) (x + 1), (int) (y - 1), (int) (z - 1)), Blocks.GLASS.getDefaultState(), 3);
-		world.setBlockState(new BlockPos((int) (x - 1), (int) (y - 1), (int) (z + 1)), Blocks.GLASS.getDefaultState(), 3);
+		if (world instanceof ServerWorld) {
+			((World) world).getServer().getCommandManager().handleCommand(
+					new CommandSource(ICommandSource.DUMMY, new Vector3d(x, y, z), Vector2f.ZERO, (ServerWorld) world, 4, "",
+							new StringTextComponent(""), ((World) world).getServer(), null).withFeedbackDisabled(),
+					"fill ~-3 ~-1 ~-3 ~2 ~-1 ~2 glass");
+		}
 	}
 }
