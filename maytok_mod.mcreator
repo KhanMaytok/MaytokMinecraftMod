@@ -93,22 +93,6 @@
       }
     },
     {
-      "name": "MaytokDiggerRecipe",
-      "type": "recipe",
-      "sortid": 9,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "maytok_digger_recipe"
-    },
-    {
-      "name": "MaytokCleaner",
-      "type": "block",
-      "sortid": 10,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "maytok_cleaner"
-    },
-    {
       "name": "MaytokCleanerGui",
       "type": "gui",
       "sortid": 11,
@@ -125,10 +109,6 @@
       "registry_name": "sdsdsd",
       "metadata": {
         "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
           {
             "name": "x",
             "type": "number"
@@ -175,6 +155,92 @@
           }
         ]
       }
+    },
+    {
+      "name": "MaytokCleanerBlockAdded",
+      "type": "procedure",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "maytok_cleaner_block_added",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MaytokRoadGenerator",
+      "type": "block",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "maytok_road_generator"
+    },
+    {
+      "name": "MaytokItemRoadGeneratorItemInHandTick",
+      "type": "procedure",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "maytok_item_road_generator_item_in_hand_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MaytokOtemRoadGenerator",
+      "type": "item",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "maytok_otem_road_generator"
+    },
+    {
+      "name": "MaytokArmor",
+      "type": "armor",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "maytok_armor",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
     }
   ],
   "variable_elements": [],
@@ -191,9 +257,14 @@
   "language_map": {
     "en_us": {
       "subtitles.maytok.sounds.bzrpnickyjam": "BZRP x Nicky Jam",
+      "item.maytok_mod.maytok_armor_chestplate": "Maytok Armor Body",
+      "item.maytok_mod.maytok_armor_boots": "Maytok Armor Boots",
+      "item.maytok_mod.maytok_otem_road_generator": "Maytok Otem Road Generator",
+      "item.maytok_mod.maytok_armor_helmet": "Maytok Armor Helmet",
       "subtitles.maytok.sounds.pumpedupkicks": "",
       "block.maytok_mod.maytok_digger": "Maytok Digger",
-      "block.maytok_mod.maytok_cleaner": "Maytok Cleaner"
+      "block.maytok_mod.maytok_road_generator": "Maytok Road Generator",
+      "item.maytok_mod.maytok_armor_leggings": "Maytok Armor Leggings"
     }
   },
   "foldersRoot": {
@@ -217,5 +288,5 @@
     "modElementsPackage": "com.maytok.mcmod",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202100354000
+  "mcreatorVersion": 202200120510
 }

@@ -1,5 +1,5 @@
 {
-  "parent": "maytok_mod:block/maytok_cleaner",
+  "parent": "maytok_mod:block/maytok_road_generator",
   "display": {
     "thirdperson": {
       "rotation": [

@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "maytok_mod:block/maytok_road_generator"
+    }
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "_fv": 24,
+  "_fv": 28,
   "_type": "gui",
   "definition": {
     "type": 1,
@@ -18,7 +18,7 @@
           },
           "id": 0,
           "disableStackInteraction": false,
-          "dropItemsWhenNotBound": true,
+          "dropItemsWhenNotBound": false,
           "name": "Slot #0",
           "x": 132,
           "y": 102
@@ -32,7 +32,7 @@
           },
           "id": 1,
           "disableStackInteraction": false,
-          "dropItemsWhenNotBound": true,
+          "dropItemsWhenNotBound": false,
           "name": "Slot #1",
           "x": 150,
           "y": 102
@@ -46,7 +46,7 @@
           },
           "id": 2,
           "disableStackInteraction": false,
-          "dropItemsWhenNotBound": true,
+          "dropItemsWhenNotBound": false,
           "name": "Slot #2",
           "x": 168,
           "y": 102
@@ -60,7 +60,7 @@
           },
           "id": 3,
           "disableStackInteraction": false,
-          "dropItemsWhenNotBound": true,
+          "dropItemsWhenNotBound": false,
           "name": "Slot #3",
           "x": 186,
           "y": 102
@@ -398,8 +398,8 @@
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
           "name": "Slot #27",
-          "x": 130,
-          "y": 45
+          "x": 132,
+          "y": 48
         }
       },
       {
@@ -412,8 +412,8 @@
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
           "name": "Slot #28",
-          "x": 147,
-          "y": 46
+          "x": 150,
+          "y": 48
         }
       },
       {
@@ -426,8 +426,8 @@
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
           "name": "Slot #29",
-          "x": 167,
-          "y": 44
+          "x": 168,
+          "y": 48
         }
       },
       {
@@ -440,8 +440,8 @@
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
           "name": "Slot #30",
-          "x": 185,
-          "y": 42
+          "x": 186,
+          "y": 48
         }
       },
       {
@@ -454,8 +454,8 @@
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
           "name": "Slot #31",
-          "x": 202,
-          "y": 44
+          "x": 204,
+          "y": 48
         }
       },
       {
@@ -468,8 +468,8 @@
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
           "name": "Slot #32",
-          "x": 220,
-          "y": 43
+          "x": 222,
+          "y": 48
         }
       },
       {
@@ -482,8 +482,8 @@
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
           "name": "Slot #33",
-          "x": 242,
-          "y": 41
+          "x": 240,
+          "y": 48
         }
       },
       {
@@ -496,8 +496,8 @@
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
           "name": "Slot #34",
-          "x": 260,
-          "y": 40
+          "x": 258,
+          "y": 48
         }
       },
       {
@@ -510,8 +510,8 @@
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
           "name": "Slot #35",
-          "x": 277,
-          "y": 44
+          "x": 276,
+          "y": 48
         }
       }
     ],

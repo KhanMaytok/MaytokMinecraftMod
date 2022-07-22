@@ -1,6 +1,11 @@
 {
   "subtitles.maytok.sounds.bzrpnickyjam": "BZRP x Nicky Jam",
+  "item.maytok_mod.maytok_armor_chestplate": "Maytok Armor Body",
+  "item.maytok_mod.maytok_armor_boots": "Maytok Armor Boots",
+  "item.maytok_mod.maytok_otem_road_generator": "Maytok Otem Road Generator",
+  "item.maytok_mod.maytok_armor_helmet": "Maytok Armor Helmet",
   "subtitles.maytok.sounds.pumpedupkicks": "",
   "block.maytok_mod.maytok_digger": "Maytok Digger",
-  "block.maytok_mod.maytok_cleaner": "Maytok Cleaner"
+  "block.maytok_mod.maytok_road_generator": "Maytok Road Generator",
+  "item.maytok_mod.maytok_armor_leggings": "Maytok Armor Leggings"
 }

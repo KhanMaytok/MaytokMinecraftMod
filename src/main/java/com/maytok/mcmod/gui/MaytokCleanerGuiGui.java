@@ -172,23 +172,23 @@ public class MaytokCleanerGuiGui extends MaytokModModElements.ModElement {
 			}));
 			this.customSlots.put(26, this.addSlot(new SlotItemHandler(internal, 26, 153, 47) {
 			}));
-			this.customSlots.put(27, this.addSlot(new SlotItemHandler(internal, 27, 7, 26) {
+			this.customSlots.put(27, this.addSlot(new SlotItemHandler(internal, 27, 9, 29) {
 			}));
-			this.customSlots.put(28, this.addSlot(new SlotItemHandler(internal, 28, 24, 27) {
+			this.customSlots.put(28, this.addSlot(new SlotItemHandler(internal, 28, 27, 29) {
 			}));
-			this.customSlots.put(29, this.addSlot(new SlotItemHandler(internal, 29, 44, 25) {
+			this.customSlots.put(29, this.addSlot(new SlotItemHandler(internal, 29, 45, 29) {
 			}));
-			this.customSlots.put(30, this.addSlot(new SlotItemHandler(internal, 30, 62, 23) {
+			this.customSlots.put(30, this.addSlot(new SlotItemHandler(internal, 30, 63, 29) {
 			}));
-			this.customSlots.put(31, this.addSlot(new SlotItemHandler(internal, 31, 79, 25) {
+			this.customSlots.put(31, this.addSlot(new SlotItemHandler(internal, 31, 81, 29) {
 			}));
-			this.customSlots.put(32, this.addSlot(new SlotItemHandler(internal, 32, 97, 24) {
+			this.customSlots.put(32, this.addSlot(new SlotItemHandler(internal, 32, 99, 29) {
 			}));
-			this.customSlots.put(33, this.addSlot(new SlotItemHandler(internal, 33, 119, 22) {
+			this.customSlots.put(33, this.addSlot(new SlotItemHandler(internal, 33, 117, 29) {
 			}));
-			this.customSlots.put(34, this.addSlot(new SlotItemHandler(internal, 34, 137, 21) {
+			this.customSlots.put(34, this.addSlot(new SlotItemHandler(internal, 34, 135, 29) {
 			}));
-			this.customSlots.put(35, this.addSlot(new SlotItemHandler(internal, 35, 154, 25) {
+			this.customSlots.put(35, this.addSlot(new SlotItemHandler(internal, 35, 153, 29) {
 			}));
 			int si;
 			int sj;
@@ -329,10 +329,26 @@ public class MaytokCleanerGuiGui extends MaytokModModElements.ModElement {
 			if (!bound && (playerIn instanceof ServerPlayerEntity)) {
 				if (!playerIn.isAlive() || playerIn instanceof ServerPlayerEntity && ((ServerPlayerEntity) playerIn).hasDisconnected()) {
 					for (int j = 0; j < internal.getSlots(); ++j) {
+						if (j == 0)
+							continue;
+						if (j == 1)
+							continue;
+						if (j == 2)
+							continue;
+						if (j == 3)
+							continue;
 						playerIn.dropItem(internal.extractItem(j, internal.getStackInSlot(j).getCount(), false), false);
 					}
 				} else {
 					for (int i = 0; i < internal.getSlots(); ++i) {
+						if (i == 0)
+							continue;
+						if (i == 1)
+							continue;
+						if (i == 2)
+							continue;
+						if (i == 3)
+							continue;
 						playerIn.inventory.placeItemBackInInventory(playerIn.world,
 								internal.extractItem(i, internal.getStackInSlot(i).getCount(), false));
 					}

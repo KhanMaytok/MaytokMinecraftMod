@@ -59,7 +59,7 @@ public class MaytokDiggerOnBlockRightClickedProcedure {
 		bufferLevel = 2;
 		encontreRompible = 0;
 		while (encontreRompible == 0) {
-			if ((world.getBlockState(new BlockPos((int) x, (int) (y - level), (int) z))).getBlock() == Blocks.BARRIER) {
+			if ((world.getBlockState(new BlockPos(x, y - level, z))).getBlock() == Blocks.BARRIER) {
 				level = (level + 1);
 			} else {
 				encontreRompible = 1;
@@ -70,35 +70,27 @@ public class MaytokDiggerOnBlockRightClickedProcedure {
 			sx = (-3);
 			for (int index2 = 0; index2 < (int) (6); index2++) {
 				if (!BlockTags.getCollection().getTagByID(new ResourceLocation("minecraft:wither_immune"))
-						.contains((world.getBlockState(new BlockPos((int) (x + sx), (int) (y - level), (int) (z + sz)))).getBlock())) {
+						.contains((world.getBlockState(new BlockPos(x + sx, y - level, z + sz))).getBlock())) {
 					if (world instanceof World) {
-						Block.spawnDrops(world.getBlockState(new BlockPos((int) (x + sx), (int) (y - level), (int) (z + sz))), (World) world,
-								new BlockPos((int) x, (int) (y + 1), (int) z));
-						world.destroyBlock(new BlockPos((int) (x + sx), (int) (y - level), (int) (z + sz)), false);
+						Block.spawnDrops(world.getBlockState(new BlockPos(x + sx, y - level, z + sz)), (World) world, new BlockPos(x, y + 1, z));
+						world.destroyBlock(new BlockPos(x + sx, y - level, z + sz), false);
 					}
-					world.setBlockState(new BlockPos((int) (x + sx), (int) (y - level), (int) (z + sz)), Blocks.BARRIER.getDefaultState(), 3);
+					world.setBlockState(new BlockPos(x + sx, y - level, z + sz), Blocks.BARRIER.getDefaultState(), 3);
 				}
 				sx = (sx + 1);
 			}
 			sz = (sz + 1);
 		}
-		if ((world.getBlockState(new BlockPos((int) x, (int) (y - level), (int) z))).getBlock() == Blocks.BEDROCK) {
+		if ((world.getBlockState(new BlockPos(x, y - level, z))).getBlock() == Blocks.BEDROCK) {
 			if (world instanceof ServerWorld) {
 				((World) world).getServer().getCommandManager().handleCommand(
 						new CommandSource(ICommandSource.DUMMY, new Vector3d(x, y, z), Vector2f.ZERO, (ServerWorld) world, 4, "",
 								new StringTextComponent(""), ((World) world).getServer(), null).withFeedbackDisabled(),
-						"fill ~-3 ~-2 ~-3 ~2 ~-2 ~2 air");
+						"fill ~-1 ~-2 ~-1 ~1 ~-20 ~1 air");
 			}
-
-			((World) world).getServer().getCommandManager().handleCommand(
-				new CommandSource(ICommandSource.DUMMY, new Vector3d(x, y, z), Vector2f.ZERO, (ServerWorld) world, 4, "",
-						new StringTextComponent(""), ((World) world).getServer(), null).withFeedbackDisabled(),
-				"fill ~-3 ~-2 ~-3 ~2 ~-" + level + " ~2 air replace barrier");
-
 			if (world instanceof World) {
-				Block.spawnDrops(world.getBlockState(new BlockPos((int) x, (int) y, (int) z)), (World) world,
-						new BlockPos((int) x, (int) (y + 1), (int) z));
-				world.destroyBlock(new BlockPos((int) x, (int) y, (int) z), false);
+				Block.spawnDrops(world.getBlockState(new BlockPos(x, y, z)), (World) world, new BlockPos(x, y + 1, z));
+				world.destroyBlock(new BlockPos(x, y, z), false);
 			}
 		}
 	}
